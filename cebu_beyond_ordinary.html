@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Discover Cebu, Philippines: destinations, culture, food, experiences and travel tips." name="description"/>
+  <title>
+   CEBU &mdash; Beyond the Ordinary
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+  <style>
+   :root {
+    --navy:#102e3a;
+    --blue:#087e91;
+    --aqua:#dff4f0;
+    --sand:#f7f2e8;
+    --coral:#ef795e;
+    --ink:#17343b;
+    --muted:#64777a;
+    --white:#fff;
+    --shadow:0 16px 45px #102e3a16
+}
+* {
+    box-sizing:border-box
+}
+html {
+    scroll-behavior:smooth;
+    scroll-padding-top:82px
+}
+body {
+    margin:0;
+    font-family:'DM Sans',sans-serif;
+    color:var(--ink);
+    line-height:1.65
+}
+img {
+    display:block;
+    width:100%;
+    object-fit:cover
+}
+a {
+    color:inherit;
+    text-decoration:none
+}
+button,input,select,textarea {
+    font:inherit
+}
+.wrap {
+    width:min(1160px,calc(100% - 40px));
+    margin:auto
+}
+.section {
+    padding:88px 0
+}
+.sand {
+    background:var(--sand)
+}
+.eyebrow {
+    color:var(--blue);
+    font-size:.75rem;
+    font-weight:700;
+    letter-spacing:.18em;
+    text-transform:uppercase
+}
+h1,h2,h3 {
+    font-family:'Playfair Display',serif;
+    line-height:1.13;
+    margin:0 0 15px
+}
+h2 {
+    font-size:clamp(2.1rem,4vw,3.3rem);
+    color:var(--navy)
+}
+p {
+    margin:0 0 15px
+}
+.muted {
+    color:var(--muted)
+}
+.section-head {
+    max-width:700px;
+    margin-bottom:36px
+}
+.section-head p {
+    color:var(--muted)
+}
+.btn {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border:0;
+    border-radius:40px;
+    padding:12px 21px;
+    background:var(--coral);
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+    transition:.2s
+}
+.btn:hover {
+    transform:translateY(-2px)
+}
+.btn.dark {
+    background:var(--navy)
+}
+.btn.ghost {
+    background:transparent;
+    border:1px solid #ffffffa8
+}
+.top {
+    height:76px;
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:#ffffffed;
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #e8eeee
+}
+.nav {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+.logo {
+    font:800 1.6rem 'Playfair Display';
+    letter-spacing:.04em;
+    color:var(--navy)
+}
+.logo span {
+    color:var(--coral)
+}
+.links {
+    display:flex;
+    align-items:center;
+    gap:21px;
+    font-size:.85rem;
+    font-weight:700
+}
+.links a:hover {
+    color:var(--blue)
+}
+.menu {
+    display:none;
+    border:0;
+    background:none;
+    font-size:1.7rem;
+    color:var(--navy)
+}
+.hero {
+    min-height:660px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    color:white;
+    background:linear-gradient(90deg,#08242bdc,#08242b80 54%,#08242b18),url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=2000&q=88') center/cover
+}
+.hero-copy {
+    max-width:720px;
+    padding:90px 0
+}
+.hero .eyebrow {
+    color:#b6e9dd
+}
+.hero h1 {
+    font-size:clamp(3.6rem,8vw,7rem);
+    letter-spacing:-.05em;
+    margin:14px 0 20px
+}
+.hero h1 em {
+    font-style:normal;
+    color:#ffb49d
+}
+.hero p {
+    max-width:560px;
+    color:#e8f2ef;
+    font-size:1.08rem
+}
+.actions {
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:28px
+}
+.hero-caption {
+    position:absolute;
+    right:5%;
+    bottom:22px;
+    font-size:.72rem;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:#ffffffc9
+}
+.intro {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:65px;
+    align-items:center
+}
+.intro-photo {
+    height:460px;
+    border-radius:8px 100px 8px 8px;
+    overflow:hidden;
+    position:relative
+}
+.intro-photo img {
+    height:100%
+}
+.photo-label {
+    position:absolute;
+    bottom:18px;
+    left:18px;
+    background:white;
+    padding:12px 16px;
+    font-weight:700;
+    border-radius:5px
+}
+.stats {
+    display:flex;
+    gap:28px;
+    margin-top:26px
+}
+.stat strong {
+    display:block;
+    font:700 1.8rem 'Playfair Display';
+    color:var(--blue)
+}
+.stat span {
+    font-size:.76rem;
+    color:var(--muted)
+}
+.tools {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:24px
+}
+.search {
+    flex:1;
+    min-width:220px;
+    padding:12px 16px;
+    border:1px solid #d7e2df;
+    border-radius:30px;
+    background:white
+}
+.filter {
+    border:1px solid #d7e2df;
+    background:white;
+    border-radius:30px;
+    padding:10px 16px;
+    cursor:pointer;
+    font-weight:700
+}
+.filter.active,.filter:hover {
+    background:var(--blue);
+    color:white;
+    border-color:var(--blue)
+}
+.cards {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px
+}
+.card {
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 8px 28px #102e3a0c;
+    transition:.25s
+}
+.card:hover {
+    transform:translateY(-5px);
+    box-shadow:var(--shadow)
+}
+.card img {
+    height:220px
+}
+.card-body {
+    padding:20px
+}
+.meta {
+    display:flex;
+    justify-content:space-between;
+    color:var(--blue);
+    font-size:.7rem;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    font-weight:700
+}
+.card h3 {
+    font-size:1.4rem;
+    margin:8px 0
+}
+.card p {
+    color:var(--muted);
+    font-size:.9rem
+}
+.textlink {
+    color:var(--blue);
+    font-weight:700;
+    font-size:.88rem
+}
+.experience {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center
+}
+.experience-photo {
+    height:490px;
+    border-radius:8px 8px 100px 8px;
+    overflow:hidden
+}
+.experience-photo img {
+    height:100%
+}
+.exp-list {
+    display:grid;
+    gap:18px;
+    margin-top:25px
+}
+.exp-item {
+    display:flex;
+    gap:14px
+}
+.exp-icon {
+    width:44px;
+    height:44px;
+    flex:none;
+    display:grid;
+    place-items:center;
+    background:var(--aqua);
+    border-radius:50%;
+    font-size:1.3rem
+}
+.exp-item h3 {
+    font:700 1rem 'DM Sans';
+    margin:0 0 3px
+}
+.exp-item p {
+    font-size:.88rem;
+    color:var(--muted);
+    margin:0
+}
+.gallery {
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+    grid-template-rows:205px 205px;
+    gap:12px
+}
+.gallery button {
+    padding:0;
+    border:0;
+    border-radius:8px;
+    overflow:hidden;
+    cursor:zoom-in;
+    position:relative
+}
+.gallery button:first-child {
+    grid-row:span 2
+}
+.gallery img {
+    height:100%;
+    transition:.35s
+}
+.gallery button:hover img {
+    transform:scale(1.06)
+}
+.gallery button:after {
+    content:'＋';
+    position:absolute;
+    right:13px;
+    bottom:7px;
+    color:white;
+    font-size:1.7rem;
+    text-shadow:0 2px 8px #000
+}
+.food {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:17px
+}
+.food .card img {
+    height:160px
+}
+.food .card-body {
+    padding:16px
+}
+.food h3 {
+    font-size:1.1rem
+}
+.food p {
+    font-size:.82rem
+}
+.stays {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px
+}
+.stay {
+    padding:24px;
+    border:1px solid #e1e9e5;
+    border-radius:9px;
+    background:white
+}
+.stay .symbol {
+    font-size:1.8rem
+}
+.stay h3 {
+    font-size:1.3rem;
+    margin:9px 0
+}
+.stay p {
+    font-size:.9rem;
+    color:var(--muted)
+}
+.stay b {
+    color:var(--blue);
+    font-size:.85rem
+}
+.guide {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:start
+}
+.guidebox {
+    background:white;
+    border-radius:10px;
+    padding:27px;
+    box-shadow:var(--shadow)
+}
+.guidebox h3 {
+    font-size:1.45rem
+}
+.guidebox ul {
+    padding-left:20px;
+    color:var(--muted)
+}
+.formgrid {
+    display:grid;
+    gap:12px
+}
+.field label {
+    display:block;
+    font-weight:700;
+    font-size:.82rem;
+    margin-bottom:5px
+}
+.field input,.field select {
+    width:100%;
+    padding:11px;
+    border:1px solid #d7e2df;
+    border-radius:7px
+}
+.result {
+    display:none;
+    background:var(--aqua);
+    padding:15px;
+    border-radius:8px;
+    margin-top:12px
+}
+.result strong {
+    display:block;
+    color:var(--blue);
+    font:700 1.8rem 'Playfair Display'
+}
+.activities {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:17px
+}
+.activity {
+    background:var(--sand);
+    border-radius:9px;
+    padding:23px
+}
+.activity span {
+    font-size:1.6rem
+}
+.activity h3 {
+    font-size:1.15rem;
+    margin:10px 0 6px
+}
+.activity p {
+    font-size:.88rem;
+    color:var(--muted);
+    margin:0
+}
+.contact {
+    background:var(--navy);
+    color:white
+}
+.contact h2 {
+    color:white
+}
+.contact .section-head p {
+    color:#c8d9d5
+}
+.contactgrid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px
+}
+.contactline {
+    display:flex;
+    gap:13px;
+    margin:0 0 17px;
+    color:#e0ece9
+}
+.contactline b {
+    display:block;
+    color:white
+}
+.socials {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:18px
+}
+.socials a {
+    border:1px solid #ffffff55;
+    border-radius:25px;
+    padding:8px 14px;
+    font-size:.85rem
+}
+.note {
+    background:#ffffff12;
+    border:1px solid #ffffff30;
+    border-radius:9px;
+    padding:25px;
+    color:#d5e4e0
+}
+.footer {
+    background:#0a222a;
+    color:#abc0bc;
+    padding:20px 0;
+    font-size:.8rem
+}
+.footer .wrap {
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap
+}
+.modal {
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:50;
+    background:#06191bef;
+    align-items:center;
+    justify-content:center;
+    padding:25px
+}
+.modal.open {
+    display:flex
+}
+.modal img {
+    max-width:90vw;
+    max-height:82vh;
+    object-fit:contain
+}
+.modal button {
+    position:absolute;
+    top:15px;
+    right:25px;
+    background:none;
+    border:0;
+    color:white;
+    font-size:2.5rem;
+    cursor:pointer
+}
+.empty {
+    grid-column:1/-1;
+    padding:30px;
+    text-align:center;
+    background:white;
+    color:var(--muted);
+    border-radius:8px
+}
+.faq details {
+    background:white;
+    border:1px solid #e2e9e6;
+    border-radius:8px;
+    padding:15px 18px;
+    margin:10px 0
+}
+.faq summary {
+    font-weight:700;
+    cursor:pointer
+}
+.faq details p {
+    margin:10px 0 0;
+    color:var(--muted)
+}
+@media(max-width:900px) {
+    .links {
+        gap:11px;
+        font-size:.75rem
+    }
+    .cards {
+        grid-template-columns:repeat(2,1fr)
+    }
+    .food {
+        grid-template-columns:repeat(2,1fr)
+    }
+}
+@media(max-width:700px) {
+    .wrap {
+        width:calc(100% - 32px)
+    }
+    .section {
+        padding:65px 0
+    }
+    .top {
+        height:68px
+    }
+    .menu {
+        display:block
+    }
+    .links {
+        display:none;
+        position:absolute;
+        top:68px;
+        left:0;
+        right:0;
+        background:white;
+        padding:18px 25px 24px;
+        box-shadow:var(--shadow);
+        flex-direction:column;
+        align-items:flex-start
+    }
+    .links.open {
+        display:flex
+    }
+    .hero {
+        min-height:590px;
+        background-position:58% center
+    }
+    .hero-copy {
+        padding:70px 0
+    }
+    .hero h1 {
+        font-size:4rem
+    }
+    .hero-caption {
+        display:none
+    }
+    .intro,.experience,.guide,.contactgrid {
+        grid-template-columns:1fr;
+        gap:30px
+    }
+    .intro-photo {
+        height:330px;
+        order:2
+    }
+    .stats {
+        gap:16px
+    }
+    .cards,.stays,.activities {
+        grid-template-columns:1fr
+    }
+    .gallery {
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:170px 145px 145px
+    }
+    .gallery button:first-child {
+        grid-row:span 2
+    }
+    .gallery button:last-child {
+        grid-column:span 2
+    }
+    .food {
+        grid-template-columns:1fr 1fr
+    }
+    .food .card img {
+        height:130px
+    }
+    .experience-photo {
+        height:320px;
+        order:2
+    }
+    .guidebox {
+        padding:21px
+    }
+    .footer .wrap {
+        display:block
+    }
+    .footer span {
+        display:block;
+        margin-top:5px
+    }
+}
+  </style>
+ </head>
+ <body>
+  <header class="top">
+   <div class="wrap nav">
+    <a class="logo" href="#home">
+     CEBU
+     <span>
+      .
+     </span>
+    </a>
+    <button aria-expanded="false" aria-label="Toggle navigation" class="menu" id="menu">
+     ☰
+    </button>
+    <nav class="links" id="links">
+     <a href="#about">
+      Discover
+     </a>
+     <a href="#attractions">
+      Attractions
+     </a>
+     <a href="#experiences">
+      Experiences
+     </a>
+     <a href="#gallery">
+      Gallery
+     </a>
+     <a href="#food">
+      Food
+     </a>
+     <a href="#stay">
+      Stay
+     </a>
+     <a href="#guide">
+      Travel Guide
+     </a>
+     <a href="#contact">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <section class="hero" id="home">
+    <div class="wrap hero-copy">
+     <div class="eyebrow">
+      The heart of the Philippine islands
+     </div>
+     <h1>
+      Beyond the
+      <br/>
+      <em>
+       ordinary.
+      </em>
+     </h1>
+     <p>
+      From turquoise waterfalls and sunlit islands to centuries-old landmarks and unforgettable local flavors, discover the many sides of Cebu.
+     </p>
+     <div class="actions">
+      <a class="btn" href="#attractions">
+       Explore Cebu &nearrow;
+      </a>
+      <a class="btn ghost" href="#guide">
+       Plan your trip
+      </a>
+     </div>
+    </div>
+    <div class="hero-caption">
+     Cebu, Philippines &middot; Central Visayas
+    </div>
+   </section>
+   <section class="section" id="about">
+    <div class="wrap intro">
+     <div class="intro-photo">
+      <img alt="Tropical ocean and coastline" loading="lazy" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"/>
+      <div class="photo-label">
+       A thousand ways to explore
+      </div>
+     </div>
+     <div>
+      <div class="eyebrow">
+       Get to know the island
+      </div>
+      <h2>
+       Where heritage meets the sea.
+      </h2>
+      <p>
+       Cebu is a province in Central Visayas in the Philippines, known for its coastal communities, mountain landscapes, rich history, and vibrant culture. Cebu City serves as a major urban center and gateway to destinations around the province.
+      </p>
+      <p>
+       Before Spanish colonization, Cebu was an established center of trade. In 1521, Ferdinand Magellan arrived in the island, where the resistance led by Lapulapu at Mactan became an important part of Philippine history. In 1565, the first permanent Spanish settlement in the Philippines was established in Cebu.
+      </p>
+      <p>
+       Whether you are interested in beaches, heritage, food, or outdoor adventures, Cebu offers experiences for different kinds of travelers.
+      </p>
+      <div class="stats">
+       <div class="stat">
+        <strong>
+         1565
+        </strong>
+        <span>
+         Spanish settlement
+        </span>
+       </div>
+       <div class="stat">
+        <strong>
+         Central
+        </strong>
+        <span>
+         Philippines
+        </span>
+       </div>
+       <div class="stat">
+        <strong>
+         &infin;
+        </strong>
+        <span>
+         Ways to explore
+        </span>
+       </div>
+      </div>
+      <p style="margin-top:18px">
+       <a class="textlink" href="https://tourism.cebu.gov.ph/history/" rel="noopener" target="_blank">
+        Read Cebu's history &nearrow;
+       </a>
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="section sand" id="attractions">
+    <div class="wrap">
+     <div class="section-head">
+      <div class="eyebrow">
+       Places worth the journey
+      </div>
+      <h2>
+       Discover Cebu's highlights.
+      </h2>
+      <p>
+       Explore historic landmarks, island escapes, and natural wonders. Search by destination or filter by the kind of adventure you want.
+      </p>
+     </div>
+     <div class="tools">
+      <input aria-label="Search destinations" class="search" id="search" placeholder="Search destinations&hellip;" type="search"/>
+      <button class="filter active" data-filter="all">
+       All
+      </button>
+      <button class="filter" data-filter="nature">
+       Nature
+      </button>
+      <button class="filter" data-filter="heritage">
+       Heritage
+      </button>
+      <button class="filter" data-filter="island">
+       Islands
+      </button>
+     </div>
+     <div class="cards" id="cards">
+      <article class="card" data-category="nature">
+       <img alt="Waterfall surrounded by greenery" loading="lazy" src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+       <div class="card-body">
+        <div class="meta">
+         <span>
+          Nature
+         </span>
+         <span>
+          Badian
+         </span>
+        </div>
+        <h3>
+         Kawasan Falls
+        </h3>
+        <p>
+         Known for its striking turquoise pools and waterfalls, Kawasan is a popular stop for swimming and guided canyoneering adventures.
+        </p>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=Kawasan+Falls+Cebu" rel="noopener" target="_blank">
+         View location &nearrow;
+        </a>
+       </div>
+      </article>
+      <article class="card" data-category="island">
+       <img alt="White sand beach and turquoise sea" loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+       <div class="card-body">
+        <div class="meta">
+         <span>
+          Island
+         </span>
+         <span>
+          North Cebu
+         </span>
+        </div>
+        <h3>
+         Malapascua Island
+        </h3>
+        <p>
+         A northern island known for white-sand beaches, diving, and opportunities to encounter thresher sharks with responsible dive operators.
+        </p>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=Malapascua+Island+Cebu" rel="noopener" target="_blank">
+         View location &nearrow;
+        </a>
+       </div>
+      </article>
+      <article class="card" data-category="heritage">
+       <img alt="Historic stone architecture" loading="lazy" src="https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+       <div class="card-body">
+        <div class="meta">
+         <span>
+          Heritage
+         </span>
+         <span>
+          Cebu City
+         </span>
+        </div>
+        <h3>
+         Fort San Pedro
+        </h3>
+        <p>
+         Explore a historic triangular fort that offers a glimpse into Cebu's Spanish colonial period.
+        </p>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=Fort+San+Pedro+Cebu" rel="noopener" target="_blank">
+         View location &nearrow;
+        </a>
+       </div>
+      </article>
+      <article class="card" data-category="nature">
+       <img alt="Mountain landscape" loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+       <div class="card-body">
+        <div class="meta">
+         <span>
+          Nature
+         </span>
+         <span>
+          Dalaguete
+         </span>
+        </div>
+        <h3>
+         Osme&ntilde;a Peak
+        </h3>
+        <p>
+         Famous for its jagged green hills and wide countryside views, this is a favorite destination for hikers and nature lovers.
+        </p>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=Osmena+Peak+Cebu" rel="noopener" target="_blank">
+         View location &nearrow;
+        </a>
+       </div>
+      </article>
+      <article class="card" data-category="heritage">
+       <img alt="Historic church interior" loading="lazy" src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+       <div class="card-body">
+        <div class="meta">
+         <span>
+          Heritage
+         </span>
+         <span>
+          Cebu City
+         </span>
+        </div>
+        <h3>
+         Basilica Minore del Santo Ni&ntilde;o
+        </h3>
+        <p>
+         Visit a significant religious landmark closely connected with Cebu's history and Filipino Catholic tradition.
+        </p>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=Basilica+Santo+Nino+Cebu" rel="noopener" target="_blank">
+         View location &nearrow;
+        </a>
+       </div>
+      </article>
+      <article class="card" data-category="island">
+       <img alt="Island coastline" loading="lazy" src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+       <div class="card-body">
+        <div class="meta">
+         <span>
+          Island
+         </span>
+         <span>
+          Mactan
+         </span>
+        </div>
+        <h3>
+         Olango Island
+        </h3>
+        <p>
+         Discover mangrove areas and a wildlife sanctuary known as a habitat for migratory birds.
+        </p>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=Olango+Island+Cebu" rel="noopener" target="_blank">
+         View location &nearrow;
+        </a>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="experiences">
+    <div class="wrap experience">
+     <div class="experience-photo">
+      <img alt="Traveler enjoying a scenic destination" loading="lazy" src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"/>
+     </div>
+     <div>
+      <div class="eyebrow">
+       Make memories here
+      </div>
+      <h2>
+       More than a destination.
+      </h2>
+      <p class="muted">
+       Some of the best parts of Cebu happen between the places on your itinerary: a boat ride at sunrise, a shared meal after a long day, or a quiet moment beside the sea.
+      </p>
+      <div class="exp-list">
+       <div class="exp-item">
+        <div class="exp-icon">
+         🐠
+        </div>
+        <div>
+         <h3>
+          Underwater discoveries
+         </h3>
+         <p>
+          Snorkel or dive with responsible local guides and respect marine life.
+         </p>
+        </div>
+       </div>
+       <div class="exp-item">
+        <div class="exp-icon">
+         🚤
+        </div>
+        <div>
+         <h3>
+          Island-hopping days
+         </h3>
+         <p>
+          Ride between nearby islands, swim in clear water, and enjoy a beach picnic.
+         </p>
+        </div>
+       </div>
+       <div class="exp-item">
+        <div class="exp-icon">
+         🌄
+        </div>
+        <div>
+         <h3>
+          Mountain mornings
+         </h3>
+         <p>
+          Wake early for cool air, scenic hikes, and countryside views.
+         </p>
+        </div>
+       </div>
+       <div class="exp-item">
+        <div class="exp-icon">
+         🤝
+        </div>
+        <div>
+         <h3>
+          Local connections
+         </h3>
+         <p>
+          Meet local makers, learn Cebuano phrases, and support community businesses.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section sand" id="gallery">
+    <div class="wrap">
+     <div class="section-head">
+      <div class="eyebrow">
+       A little visual daydream
+      </div>
+      <h2>
+       Postcards from Cebu.
+      </h2>
+      <p>
+       Select a photograph to view it in a larger format. Images are illustrative travel photography.
+      </p>
+     </div>
+     <div class="gallery">
+      <button aria-label="View ocean photo" class="photo">
+       <img alt="Ocean waves" loading="lazy" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/>
+      </button>
+      <button aria-label="View beach photo" class="photo">
+       <img alt="White sand beach" loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+      </button>
+      <button aria-label="View island photo" class="photo">
+       <img alt="Tropical island" loading="lazy" src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+      </button>
+      <button aria-label="View waterfall photo" class="photo">
+       <img alt="Waterfall" loading="lazy" src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+      </button>
+      <button aria-label="View sea photo" class="photo">
+       <img alt="Clear blue sea" loading="lazy" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/>
+      </button>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="food">
+    <div class="wrap">
+     <div class="section-head">
+      <div class="eyebrow">
+       Come hungry
+      </div>
+      <h2>
+       Taste your way around Cebu.
+      </h2>
+      <p>
+       Cebu's food culture reflects local ingredients and traditions. Here are some specialties and must-try treats.
+      </p>
+     </div>
+     <div class="food">
+      <article class="card">
+       <img alt="Roasted meat dish" loading="lazy" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=600&amp;q=85"/>
+       <div class="card-body">
+        <h3>
+         Cebu Lechon
+        </h3>
+        <p>
+         Slow-roasted whole pig known for crisp skin and fragrant seasoning.
+        </p>
+       </div>
+      </article>
+      <article class="card">
+       <img alt="Pastry" loading="lazy" src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&amp;fit=crop&amp;w=600&amp;q=85"/>
+       <div class="card-body">
+        <h3>
+         Otap
+        </h3>
+        <p>
+         A crisp, flaky, sugar-coated pastry and popular pasalubong.
+        </p>
+       </div>
+      </article>
+      <article class="card">
+       <img alt="Traditional food" loading="lazy" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=600&amp;q=85"/>
+       <div class="card-body">
+        <h3>
+         Budbod Kabog
+        </h3>
+        <p>
+         A traditional delicacy made with millet and commonly wrapped in banana leaves.
+        </p>
+       </div>
+      </article>
+      <article class="card">
+       <img alt="Sweet dessert" loading="lazy" src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&amp;fit=crop&amp;w=600&amp;q=85"/>
+       <div class="card-body">
+        <h3>
+         Dried Mangoes
+        </h3>
+        <p>
+         A sweet and chewy Cebu pasalubong favorite.
+        </p>
+       </div>
+      </article>
+     </div>
+     <p class="muted" style="font-size:.82rem;margin-top:18px">
+      Restaurants to explore:
+      <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=House+of+Lechon+Cebu+City" rel="noopener" target="_blank">
+       House of Lechon
+      </a>
+      (Acacia Street, Cebu City) and
+      <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=CnT+Lechon+Guadalupe+Cebu" rel="noopener" target="_blank">
+       CnT Lechon &ndash; Guadalupe
+      </a>
+      (V. Rama Avenue, Cebu City). Check current menus and hours before visiting. Food background:
+      <a class="textlink" href="https://www.cebu.gov.ph/about/" rel="noopener" target="_blank">
+       Cebu Provincial Government &nearrow;
+      </a>
+      . Food photographs are illustrative.
+     </p>
+    </div>
+   </section>
+   <section class="section sand" id="stay">
+    <div class="wrap">
+     <div class="section-head">
+      <div class="eyebrow">
+       Rest and recharge
+      </div>
+      <h2>
+       Find your kind of stay.
+      </h2>
+      <p>
+       Choose your base based on the experience you want. Compare current rates, reviews, and locations before booking.
+      </p>
+     </div>
+     <div class="stays">
+      <article class="stay">
+       <div class="symbol">
+        🏙️
+       </div>
+       <h3>
+        City hotels
+       </h3>
+       <p>
+        Best for food trips, shopping, heritage walks, and convenient transport around Cebu City.
+       </p>
+       <p>
+        <b>
+         Example:
+        </b>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=Waterfront+Cebu+City+Hotel" rel="noopener" target="_blank">
+         Waterfront Cebu City Hotel
+        </a>
+        , Lahug.
+       </p>
+       <b>
+        Best for: City explorers
+       </b>
+      </article>
+      <article class="stay">
+       <div class="symbol">
+        🏝️
+       </div>
+       <h3>
+        Beach resorts
+       </h3>
+       <p>
+        Ideal for a slower holiday, water activities, and easy access to Mactan's coastal attractions.
+       </p>
+       <p>
+        <b>
+         Examples:
+        </b>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=Movenpick+Hotel+Mactan+Island+Cebu" rel="noopener" target="_blank">
+         M&ouml;venpick Cebu
+        </a>
+        and
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&amp;query=The+Reef+Island+Resort+Mactan" rel="noopener" target="_blank">
+         The Reef Island Resort
+        </a>
+        .
+       </p>
+       <b>
+        Best for: Beach lovers
+       </b>
+      </article>
+      <article class="stay">
+       <div class="symbol">
+        🎒
+       </div>
+       <h3>
+        Guesthouses &amp; hostels
+       </h3>
+       <p>
+        A practical option for backpackers and travelers who plan to spend most of the day exploring. Compare guesthouses around Cebu City and Moalboal.
+       </p>
+       <b>
+        Best for: Budget travelers
+       </b>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="guide">
+    <div class="wrap">
+     <div class="section-head">
+      <div class="eyebrow">
+       Make the most of your visit
+      </div>
+      <h2>
+       Your Cebu travel guide.
+      </h2>
+      <p>
+       A little planning makes island time even better. Confirm schedules and prices with local providers before departure.
+      </p>
+     </div>
+     <div class="guide">
+      <div class="guidebox">
+       <h3>
+        Getting around &amp; travel tips
+       </h3>
+       <ul>
+        <li>
+         <b>
+          Arriving:
+         </b>
+         Fly into Mactan-Cebu International Airport. Taxis, ride-hailing services, and transfers connect the airport with Cebu City and Mactan.
+        </li>
+        <li>
+         <b>
+          By land:
+         </b>
+         Buses and vans connect Cebu City with towns in the north and south. Travel times vary with traffic.
+        </li>
+        <li>
+         <b>
+          By sea:
+         </b>
+         Ferries and local boats connect Cebu with nearby islands. Check schedules and sea conditions.
+        </li>
+        <li>
+         <b>
+          Prepare:
+         </b>
+         Bring sun protection, drinking water, cash for small vendors, and a light rain layer.
+        </li>
+        <li>
+         <b>
+          Travel responsibly:
+         </b>
+         Follow local access rules, use authorized guides where required, and avoid disturbing wildlife or coral reefs.
+        </li>
+       </ul>
+       <p>
+        <a class="textlink" href="https://tourism.cebu.gov.ph/" rel="noopener" target="_blank">
+         Official Cebu tourism information &nearrow;
+        </a>
+       </p>
+      </div>
+      <div class="guidebox">
+       <h3>
+        Estimate your trip budget
+       </h3>
+       <p class="muted" style="font-size:.9rem">
+        Enter your estimated costs. These are editable sample amounts, not live supplier quotes.
+       </p>
+       <div class="formgrid">
+        <div class="field">
+         <label for="days">
+          Number of days
+         </label>
+         <input id="days" max="30" min="1" type="number" value="3"/>
+        </div>
+        <div class="field">
+         <label for="stayCost">
+          Accommodation per night (₱)
+         </label>
+         <input id="stayCost" min="0" type="number" value="1800"/>
+        </div>
+        <div class="field">
+         <label for="foodCost">
+          Food per day (₱)
+         </label>
+         <input id="foodCost" min="0" type="number" value="700"/>
+        </div>
+        <div class="field">
+         <label for="transportCost">
+          Transport per day (₱)
+         </label>
+         <input id="transportCost" min="0" type="number" value="500"/>
+        </div>
+        <div class="field">
+         <label for="activityCost">
+          Activities per day (₱)
+         </label>
+         <input id="activityCost" min="0" type="number" value="800"/>
+        </div>
+        <button class="btn dark" id="calculate" type="button">
+         Calculate my estimate
+        </button>
+        <div aria-live="polite" class="result" id="result">
+         Estimated total
+         <strong id="total">
+          ₱0
+         </strong>
+         <span id="daily">
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section sand" id="activities">
+    <div class="wrap">
+     <div class="section-head">
+      <div class="eyebrow">
+       Choose your adventure
+      </div>
+      <h2>
+       Things to do in Cebu.
+      </h2>
+      <p>
+       Mix active days with slow moments. Always check local conditions and choose reputable tour operators.
+      </p>
+     </div>
+     <div class="activities">
+      <article class="activity">
+       <span>
+        🤿
+       </span>
+       <h3>
+        Snorkel &amp; dive
+       </h3>
+       <p>
+        Discover reefs and marine life with responsible guides. Never stand on or touch coral.
+       </p>
+      </article>
+      <article class="activity">
+       <span>
+        🛶
+       </span>
+       <h3>
+        Island-hop
+       </h3>
+       <p>
+        Spend a day exploring nearby islands, beaches, and sandbars by boat.
+       </p>
+      </article>
+      <article class="activity">
+       <span>
+        🥾
+       </span>
+       <h3>
+        Hike the highlands
+       </h3>
+       <p>
+        Enjoy fresh air and mountain scenery on a guided trek suited to your fitness level.
+       </p>
+      </article>
+      <article class="activity">
+       <span>
+        🏛️
+       </span>
+       <h3>
+        Explore heritage
+       </h3>
+       <p>
+        Visit historic churches, forts, museums, and landmarks in Cebu City.
+       </p>
+      </article>
+      <article class="activity">
+       <span>
+        🍽️
+       </span>
+       <h3>
+        Go on a food trip
+       </h3>
+       <p>
+        Try lechon, puso, ngohiong, seafood, and sweet mango treats.
+       </p>
+      </article>
+      <article class="activity">
+       <span>
+        🌅
+       </span>
+       <h3>
+        Chase the sunset
+       </h3>
+       <p>
+        Find a coastal viewpoint, slow down, and enjoy the changing colors over the sea.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="faq">
+    <div class="wrap faq">
+     <div class="section-head">
+      <div class="eyebrow">
+       Before you go
+      </div>
+      <h2>
+       Quick travel questions.
+      </h2>
+     </div>
+     <details>
+      <summary>
+       What is the best way to get to Cebu?
+      </summary>
+      <p>
+       Many visitors arrive through Mactan-Cebu International Airport. Ferry services also connect Cebu with other islands.
+      </p>
+     </details>
+     <details>
+      <summary>
+       How many days should I spend in Cebu?
+      </summary>
+      <p>
+       A few days can cover selected city attractions, while a longer stay gives you more time to explore destinations in the north and south.
+      </p>
+     </details>
+     <details>
+      <summary>
+       What should I bring?
+      </summary>
+      <p>
+       Bring comfortable clothing, sun protection, reusable water, appropriate footwear, and cash for small local purchases.
+      </p>
+     </details>
+    </div>
+   </section>
+   <section class="section contact" id="contact">
+    <div class="wrap">
+     <div class="section-head">
+      <div class="eyebrow" style="color:#a5e1d5">
+       Let's keep in touch
+      </div>
+      <h2>
+       See you in Cebu.
+      </h2>
+      <p>
+       For updated travel advisories, attraction details, and local recommendations, consult official tourism channels.
+      </p>
+     </div>
+     <div class="contactgrid">
+      <div>
+       <div class="contactline">
+        <span>
+         📍
+        </span>
+        <div>
+         <b>
+          Destination
+         </b>
+         Cebu Province, Central Visayas, Philippines
+        </div>
+       </div>
+       <div class="contactline">
+        <span>
+         ✈️
+        </span>
+        <div>
+         <b>
+          Main gateway
+         </b>
+         Mactan-Cebu International Airport
+        </div>
+       </div>
+       <div class="contactline">
+        <span>
+         🌐
+        </span>
+        <div>
+         <b>
+          Tourism resource
+         </b>
+         <a href="https://tourism.cebu.gov.ph/" rel="noopener" target="_blank">
+          Cebu Provincial Tourism Office &nearrow;
+         </a>
+        </div>
+       </div>
+       <div class="socials">
+        <a href="https://www.facebook.com/" rel="noopener" target="_blank">
+         Facebook
+        </a>
+        <a href="https://www.instagram.com/" rel="noopener" target="_blank">
+         Instagram
+        </a>
+        <a href="https://www.youtube.com/" rel="noopener" target="_blank">
+         YouTube
+        </a>
+       </div>
+      </div>
+      <div class="note">
+       <h3 style="color:white">
+        A note for travelers
+       </h3>
+       <p>
+        This is a student-made Cebu destination guide. It is not an official tourism office website and does not accept bookings. Verify fees, opening hours, transport schedules, and accommodation rates with the relevant provider before travelling.
+       </p>
+       <p style="margin:0">
+        Salamat kaayo &mdash; thank you, and enjoy your Cebu adventure!
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section sand" id="sources">
+    <div class="wrap">
+     <div class="section-head">
+      <div class="eyebrow">
+       Research &amp; further reading
+      </div>
+      <h2>
+       Sources behind this guide.
+      </h2>
+      <p>
+       Use these sources to verify destination details, check accredited accommodation providers, and find updated visitor information.
+      </p>
+     </div>
+     <div class="stays">
+      <article class="stay">
+       <div class="symbol">
+        🏛️
+       </div>
+       <h3>
+        Cebu Provincial Tourism Office
+       </h3>
+       <p>
+        Destination profiles, history, and tourism information.
+       </p>
+       <a class="textlink" href="https://tourism.cebu.gov.ph/" rel="noopener" target="_blank">
+        Visit website &nearrow;
+       </a>
+      </article>
+      <article class="stay">
+       <div class="symbol">
+        🇵🇭
+       </div>
+       <h3>
+        Department of Tourism
+       </h3>
+       <p>
+        National tourism information and destination background.
+       </p>
+       <a class="textlink" href="https://www.tourism.gov.ph/" rel="noopener" target="_blank">
+        Visit website &nearrow;
+       </a>
+      </article>
+      <article class="stay">
+       <div class="symbol">
+        🏙️
+       </div>
+       <h3>
+        Cebu City Government
+       </h3>
+       <p>
+        City information, history, and local government resources.
+       </p>
+       <a class="textlink" href="https://www.cebucity.gov.ph/" rel="noopener" target="_blank">
+        Visit website &nearrow;
+       </a>
+      </article>
+      <article class="stay">
+       <div class="symbol">
+        🛏️
+       </div>
+       <h3>
+        Tourism Directory
+       </h3>
+       <p>
+        Official Cebu directory of tourism establishments, including accredited accommodation providers and tourism services.
+       </p>
+       <a class="textlink" href="https://tourism.cebu.gov.ph/directory/" rel="noopener" target="_blank">
+        Find verified providers &nearrow;
+       </a>
+      </article>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="wrap">
+    <div>
+     &copy; 2026 CEBU. Beyond the Ordinary.
+    </div>
+    <span>
+     Student tourism website &middot; Cebu, Philippines
+    </span>
+   </div>
+  </footer>
+  <div aria-label="Expanded gallery image" aria-modal="true" class="modal" id="modal" role="dialog">
+   <button aria-label="Close image" id="close">
+    &times;
+   </button>
+   <img alt="" id="modalImg" src=""/>
+  </div>
+  <script>
+   // Mobile menu: show the links when the menu button is clicked.
+const menuButton = document.getElementById("menu");
+const navigationLinks = document.getElementById("links");
+
+menuButton.addEventListener("click", () => {
+    const menuIsOpen = navigationLinks.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", menuIsOpen);
+    menuButton.textContent = menuIsOpen ? "×" : "☰";
+});
+
+// Close the mobile menu after someone chooses a page section.
+navigationLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+        navigationLinks.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.textContent = "☰";
+    });
+});
+
+// Search for attractions and filter them by category.
+const attractionSearch = document.getElementById("search");
+const categoryButtons = [...document.querySelectorAll(".filter")];
+const attractionCards = [...document.querySelectorAll("#cards .card")];
+let selectedCategory = "all";
+
+function showMatchingAttractions() {
+    const searchText = attractionSearch.value.toLowerCase().trim();
+    let visibleCards = 0;
+
+    attractionCards.forEach((card) => {
+        const matchesCategory = selectedCategory === "all" ||
+            card.dataset.category === selectedCategory;
+        const matchesSearch = card.innerText.toLowerCase().includes(searchText);
+        const shouldShowCard = matchesCategory && matchesSearch;
+
+        card.style.display = shouldShowCard ? "" : "none";
+        if (shouldShowCard) visibleCards++;
+    });
+
+    let emptyMessage = document.querySelector(".empty");
+
+    if (visibleCards === 0 && !emptyMessage) {
+        emptyMessage = document.createElement("div");
+        emptyMessage.className = "empty";
+        emptyMessage.textContent = "No destinations found. Try another search or filter.";
+        document.getElementById("cards").appendChild(emptyMessage);
+    } else if (visibleCards > 0 && emptyMessage) {
+        emptyMessage.remove();
+    }
+}
+
+attractionSearch.addEventListener("input", showMatchingAttractions);
+
+categoryButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        categoryButtons.forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        selectedCategory = button.dataset.filter;
+        showMatchingAttractions();
+    });
+});
+
+// Open a larger version of a gallery photo when it is selected.
+const photoModal = document.getElementById("modal");
+const enlargedPhoto = document.getElementById("modalImg");
+
+function closePhotoModal() {
+    photoModal.classList.remove("open");
+    document.body.style.overflow = "";
+}
+
+document.querySelectorAll(".photo").forEach((photoButton) => {
+    photoButton.addEventListener("click", () => {
+        const photo = photoButton.querySelector("img");
+        enlargedPhoto.src = photo.src;
+        enlargedPhoto.alt = photo.alt;
+        photoModal.classList.add("open");
+        document.body.style.overflow = "hidden";
+    });
+});
+
+document.getElementById("close").addEventListener("click", closePhotoModal);
+
+photoModal.addEventListener("click", (event) => {
+    if (event.target === photoModal) closePhotoModal();
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closePhotoModal();
+});
+
+// Work out an estimated trip cost using the amounts entered in the form.
+function getAmount(fieldId) {
+    const fieldValue = Number(document.getElementById(fieldId).value) || 0;
+    return Math.max(0, fieldValue);
+}
+
+function calculateTripBudget() {
+    const numberOfDays = Math.min(30, Math.max(1, getAmount("days")));
+    const accommodationPerNight = getAmount("stayCost");
+    const foodPerDay = getAmount("foodCost");
+    const transportPerDay = getAmount("transportCost");
+    const activitiesPerDay = getAmount("activityCost");
+
+    const dailyCost = accommodationPerNight + foodPerDay +
+        transportPerDay + activitiesPerDay;
+    const totalCost = dailyCost * numberOfDays;
+
+    function formatPesos(amount) {
+        return "₱" + Math.round(amount).toLocaleString("en-PH");
+    }
+
+    document.getElementById("total").textContent = formatPesos(totalCost);
+    document.getElementById("daily").textContent =
+        `About ${formatPesos(totalCost / numberOfDays)} per day · ${numberOfDays} day(s), per person`;
+    document.getElementById("result").style.display = "block";
+}
+
+document.getElementById("calculate").addEventListener("click", calculateTripBudget);
+calculateTripBudget();
+  </script>
+ </body>
+</html>
